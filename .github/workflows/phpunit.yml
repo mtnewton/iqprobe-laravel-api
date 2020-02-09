@@ -22,7 +22,7 @@ jobs:
       run: |
         mkdir -p database
         touch database/database.sqlite
-    - name: Create Database
+    - name: Create Passport keys
       run: php artisan passport:keys
     - name: Execute tests via PHPUnit
       env:
